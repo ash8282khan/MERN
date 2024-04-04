@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day3 position and animation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            height: 50px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: blanchedalmond;
+            position: absolute;
+            animation-name: button-animation-type-1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            
+        }
+
+        button:hover{
+            background-color: orange;
+            box-shadow: 10px 10px 5px red   ;
+            /* transition: 2s; */
+        }
+
+        @keyframes button-animation-type-1{
+            0%{
+                top: 20px; left: 140px;
+            }
+            20%{
+                top: 20px; left: 490px;
+            }
+            40%{
+                top: 420px; left: 490px;
+            }
+            60%{
+                top: 420px; left: 140px;
+            }
+            100%{
+                top: 20px; left: 140px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent2">
+        parent2 
+    </div>
+    
+    <div class="logo">
+        logo
+    </div>
+   
+    <div class="content">
+        content
+    </div>
+
+    <button>
+        button
+    </button>
+
+    <br><br><br>
+    
+    <!-- CSS Animations
+CSS allows animation of HTML elements without using JavaScript!
+
+CSS
+In this chapter you will learn about the following properties:
+
+@keyframes
+animation-name
+animation-duration
+animation-delay
+animation-iteration-count
+animation-direction
+animation-timing-function
+animation-fill-mode
+animation -->
+
+</body>
+</html>
