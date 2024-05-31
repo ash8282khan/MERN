@@ -1,5 +1,5 @@
 const categoryRow = () => {
-    return <div>CategoryRow</div>
+    return <div id='category-row'></div>
 }
 
 export default categoryRow;

@@ -1,6 +1,6 @@
 import Navbar from "./navbar";
-import categoryRow from "./categoryRow";
-import carousal from "./carousal";
+import CategoryRow from "./categoryRow";
+import Carousal from "./carousal";
 import Cards from "./cards";
 
 
@@ -8,8 +8,8 @@ const Homepage = () => {
     return <div>
       
         <Navbar/>
-        <categoryRow/>
-        <carousal/>
+        <CategoryRow/>
+        <Carousal/>
         <Cards/>
     </div>
 }

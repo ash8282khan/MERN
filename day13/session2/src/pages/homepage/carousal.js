@@ -1,4 +1,4 @@
 const carousal = () => {
-    return <div>carousal</div>
+    return <div id='carousal'></div>
 }
 export default carousal;

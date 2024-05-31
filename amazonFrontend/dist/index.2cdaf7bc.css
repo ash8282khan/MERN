@@ -1,0 +1,68 @@
+body {
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  color: #fff;
+  background-color: #232f3e;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.homepage {
+  padding: 1rem;
+}
+
+.category-row {
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.card {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 4px;
+  flex: 1;
+  margin: .5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px #0000001a;
+}
+
+.carousel {
+  background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/MayART24/HERO/MayART24_GW_PC_Hero_NTA1_Event_2x._CB557876662_.jpg");
+  background-size: cover;
+  height: 340px;
+}
+
+.cards {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+}
+
+#bcard {
+  text-align: center;
+  background-color: #beadad;
+  border-radius: 20px;
+  flex: 1;
+  justify-content: space-around;
+  max-width: 20%;
+  max-height: fit-content;
+  margin: .5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 5px #0000001a;
+}
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
