@@ -5734,7 +5734,14 @@ function Navbar() {
         className: "navbar",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: "Amazon"
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                    href: "https://www.amazon.in/ref=nav_logo",
+                    children: "Amazon.in"
+                }, void 0, false, {
+                    fileName: "src/navbar.js",
+                    lineNumber: 6,
+                    columnNumber: 12
+                }, this)
             }, void 0, false, {
                 fileName: "src/navbar.js",
                 lineNumber: 6,
@@ -5743,7 +5750,7 @@ function Navbar() {
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "#home",
+                        href: "https://www.amazon.in/ref=nav_logo",
                         children: "Home"
                     }, void 0, false, {
                         fileName: "src/navbar.js",
@@ -5751,7 +5758,7 @@ function Navbar() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "#deals",
+                        href: "https://www.amazon.in/deals?ref_=nav_cs_gb",
                         children: "Today's Deals"
                     }, void 0, false, {
                         fileName: "src/navbar.js",
@@ -5759,7 +5766,7 @@ function Navbar() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "#services",
+                        href: "https://www.amazon.in/gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help",
                         children: "Customer Service"
                     }, void 0, false, {
                         fileName: "src/navbar.js",
@@ -5767,7 +5774,7 @@ function Navbar() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                        href: "#cart",
+                        href: "https://www.amazon.in/gp/cart/view.html?ref_=nav_cart",
                         children: "Cart"
                     }, void 0, false, {
                         fileName: "src/navbar.js",
