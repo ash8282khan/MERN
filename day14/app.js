@@ -13,4 +13,4 @@ const Title = ()=>{
 // root.render(Heading);
 // root.render(Title());
 root.render(<Title />);
-// <Title/> = Title()
+// <Title/> = Title();
