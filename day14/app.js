@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import HomePage from "./src/pages/homepage/homepage.js";
+import Navbar from './src/pages/common/Navbar/navbar.js';
+import HomePage from "./src/pages/HomePage/homepage.js";
 import ImageGenerator from './src/pages/ImageGenerator/imageGenerator.js';
+import HistoryPage from "./src/pages/HistoryPage/historyPage.js";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -13,6 +15,10 @@ const router = createBrowserRouter([
     {
         path: "/image-generator",
         element: <ImageGenerator />,
+    },
+    {
+        path: '/history',
+        element: <HistoryPage />
     }
 ]);
 

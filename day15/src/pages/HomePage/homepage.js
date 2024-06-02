@@ -1,12 +1,12 @@
 import Navbar from "../common/Navbar/navbar";
 import "./homepage.css";
 
-const HomePage = () => {
+const HomePage = (props) => {
     return(
         <div> 
-            <Navbar />
+            <Navbar page="home"/>
             <div className="homepage-main-container">
-                <h1>Welcome to Homepage</h1>
+                Coming soon...
             </div>
         </div>
     )

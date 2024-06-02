@@ -2966,12 +2966,14 @@ var _imageGeneratorJsDefault = parcelHelpers.interopDefault(_imageGeneratorJs);
 var _historyPageJs = require("./src/pages/HistoryPage/historyPage.js");
 var _historyPageJsDefault = parcelHelpers.interopDefault(_historyPageJs);
 var _reactRouterDom = require("react-router-dom");
+var _historyInformationPageJs = require("./src/pages/HistoryInformationPage/historyInformationPage.js");
+var _historyInformationPageJsDefault = parcelHelpers.interopDefault(_historyInformationPageJs);
 const router = (0, _reactRouterDom.createBrowserRouter)([
     {
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homepageJsDefault.default), {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 13,
+            lineNumber: 14,
             columnNumber: 18
         }, undefined)
     },
@@ -2979,7 +2981,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/image-generator",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _imageGeneratorJsDefault.default), {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 17,
+            lineNumber: 18,
             columnNumber: 18
         }, undefined)
     },
@@ -2987,7 +2989,15 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/history",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _historyPageJsDefault.default), {}, void 0, false, {
             fileName: "app.js",
-            lineNumber: 21,
+            lineNumber: 22,
+            columnNumber: 18
+        }, undefined)
+    },
+    {
+        path: "/history/:historyId",
+        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _historyInformationPageJsDefault.default), {}, void 0, false, {
+            fileName: "app.js",
+            lineNumber: 26,
             columnNumber: 18
         }, undefined)
     }
@@ -2999,14 +3009,14 @@ const App = ()=>{
         router: router
     }, void 0, false, {
         fileName: "app.js",
-        lineNumber: 29,
+        lineNumber: 34,
         columnNumber: 12
     }, undefined);
 };
 _c = App;
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
     fileName: "app.js",
-    lineNumber: 32,
+    lineNumber: 37,
     columnNumber: 13
 }, undefined));
 var _c;
@@ -3017,7 +3027,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/pages/ImageGenerator/imageGenerator.js":"gdARo","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./src/pages/common/Navbar/navbar.js":"2Xn2v","./src/pages/HistoryPage/historyPage.js":"bujso","./src/pages/HomePage/homepage.js":"a7cYD"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./src/pages/common/Navbar/navbar.js":"2Xn2v","./src/pages/HomePage/homepage.js":"a7cYD","./src/pages/ImageGenerator/imageGenerator.js":"gdARo","./src/pages/HistoryPage/historyPage.js":"bujso","react-router-dom":"9xmpe","./src/pages/HistoryInformationPage/historyInformationPage.js":"aeRD2","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27260,72 +27270,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"gdARo":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$86e5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$86e5.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _navbar = require("../common/Navbar/navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _imageGeneratorCss = require("./imageGenerator.css");
-const ImageGenerator = ()=>{
-    const func = ()=>{
-        console.log("done....");
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
-                fileName: "src/pages/ImageGenerator/imageGenerator.js",
-                lineNumber: 10,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "image-generator-main-container",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: "data:image/jpeg;base64,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",
-                        className: "image-search"
-                    }, void 0, false, {
-                        fileName: "src/pages/ImageGenerator/imageGenerator.js",
-                        lineNumber: 12,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                        onClick: func
-                    }, void 0, false, {
-                        fileName: "src/pages/ImageGenerator/imageGenerator.js",
-                        lineNumber: 13,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/ImageGenerator/imageGenerator.js",
-                lineNumber: 11,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/ImageGenerator/imageGenerator.js",
-        lineNumber: 9,
-        columnNumber: 9
-    }, undefined);
-};
-_c = ImageGenerator;
-exports.default = ImageGenerator;
-var _c;
-$RefreshReg$(_c, "ImageGenerator");
-
-  $parcel$ReactRefreshHelpers$86e5.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","../common/Navbar/navbar":"2Xn2v","./imageGenerator.css":"2Qwzt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Xn2v":[function(require,module,exports) {
+},{}],"2Xn2v":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$c711 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27414,175 +27359,7 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./navbar.css":"6DXnF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"9xmpe"}],"6DXnF":[function() {},{}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"km3Ru":[function(require,module,exports) {
-"use strict";
-var Refresh = require("7422ead32dcc1e6b");
-function debounce(func, delay) {
-    {
-        let timeout = undefined;
-        let lastTime = 0;
-        return function(args) {
-            // Call immediately if last call was more than the delay ago.
-            // Otherwise, set a timeout. This means the first call is fast
-            // (for the common case of a single update), and subsequent updates
-            // are batched.
-            let now = Date.now();
-            if (now - lastTime > delay) {
-                lastTime = now;
-                func.call(null, args);
-            } else {
-                clearTimeout(timeout);
-                timeout = setTimeout(function() {
-                    timeout = undefined;
-                    lastTime = Date.now();
-                    func.call(null, args);
-                }, delay);
-            }
-        };
-    }
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30);
-// Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module1) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module1.id + " " + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module1) {
-    if (isReactRefreshBoundary(module1.exports)) {
-        registerExportsForReactRefresh(module1);
-        if (module1.hot) {
-            module1.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module1.exports;
-            });
-            module1.hot.accept(function(getParents) {
-                var prevExports = module1.hot.data.prevExports;
-                var nextExports = module1.exports;
-                // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
-                // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-}
-// When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        if (key === "__esModule") continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module1) {
-    var exports = module1.exports, id = module1.id;
-    Refresh.register(exports, id + " %exports%");
-    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = "__esModule" in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        var typeID = id + " %exports% " + key;
-        Refresh.register(exportValue, typeID);
-    }
-}
-
-},{"7422ead32dcc1e6b":"786KC"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./navbar.css":"6DXnF","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6DXnF":[function() {},{}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.23.1
  *
@@ -34275,87 +34052,175 @@ function persistAppliedTransitions(_window, transitions) {
     }
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Qwzt":[function() {},{}],"bujso":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$a1a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$a1a6.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _navbar = require("../common/Navbar/navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
-var _react = require("react");
-var _historyPageCss = require("./historyPage.css");
-var _s = $RefreshSig$();
-const HistoryPage = ()=>{
-    _s();
-    // let data = [
-    //     {'id':'1', title:'hello'},
-    //     {'id':'2', title:'world'},
-    // ];
-    const [data, setData] = (0, _react.useState)([
-        {
-            "id": "1",
-            title: "hello"
-        },
-        {
-            "id": "2",
-            title: "world"
-        }
-    ]);
-    const getData = async ()=>{
-        const res = await fetch("https://dummyjson.com/products");
-        const obj = await res.json();
-        // data = obj.products;
-        setData(obj.products);
-        console.log(data);
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
     };
-    (0, _react.useEffect)(()=>{
-        getData();
-    }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
-                fileName: "src/pages/HistoryPage/historyPage.js",
-                lineNumber: 25,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "history-main-container",
-                children: data.map((item)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        children: item.title
-                    }, item.id, false, {
-                        fileName: "src/pages/HistoryPage/historyPage.js",
-                        lineNumber: 28,
-                        columnNumber: 25
-                    }, undefined))
-            }, void 0, false, {
-                fileName: "src/pages/HistoryPage/historyPage.js",
-                lineNumber: 26,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/pages/HistoryPage/historyPage.js",
-        lineNumber: 24,
-        columnNumber: 9
-    }, undefined);
 };
-_s(HistoryPage, "mMJUz97WPf/aWVfmRKtEws+7EFw=");
-_c = HistoryPage;
-exports.default = HistoryPage;
-var _c;
-$RefreshReg$(_c, "HistoryPage");
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
-  $parcel$ReactRefreshHelpers$a1a6.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
+},{}],"km3Ru":[function(require,module,exports) {
+"use strict";
+var Refresh = require("7422ead32dcc1e6b");
+function debounce(func, delay) {
+    {
+        let timeout = undefined;
+        let lastTime = 0;
+        return function(args) {
+            // Call immediately if last call was more than the delay ago.
+            // Otherwise, set a timeout. This means the first call is fast
+            // (for the common case of a single update), and subsequent updates
+            // are batched.
+            let now = Date.now();
+            if (now - lastTime > delay) {
+                lastTime = now;
+                func.call(null, args);
+            } else {
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    timeout = undefined;
+                    lastTime = Date.now();
+                    func.call(null, args);
+                }, delay);
+            }
+        };
+    }
 }
-},{"react/jsx-dev-runtime":"iTorj","../common/Navbar/navbar":"2Xn2v","react":"21dqq","./historyPage.css":"ckjrN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ckjrN":[function() {},{}],"a7cYD":[function(require,module,exports) {
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30);
+// Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module1) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module1.id + " " + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module1) {
+    if (isReactRefreshBoundary(module1.exports)) {
+        registerExportsForReactRefresh(module1);
+        if (module1.hot) {
+            module1.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module1.exports;
+            });
+            module1.hot.accept(function(getParents) {
+                var prevExports = module1.hot.data.prevExports;
+                var nextExports = module1.exports;
+                // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports);
+                // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+}
+// When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        if (key === "__esModule") continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module1) {
+    var exports = module1.exports, id = module1.id;
+    Refresh.register(exports, id + " %exports%");
+    if (exports == null || typeof exports !== "object") // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = "__esModule" in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        var typeID = id + " %exports% " + key;
+        Refresh.register(exportValue, typeID);
+    }
+}
+
+},{"7422ead32dcc1e6b":"786KC"}],"a7cYD":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$3e39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34378,13 +34243,7 @@ const HomePage = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "homepage-main-container",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Welcome to Homepage"
-                }, void 0, false, {
-                    fileName: "src/pages/HomePage/homepage.js",
-                    lineNumber: 9,
-                    columnNumber: 17
-                }, undefined)
+                children: "Coming soon..."
             }, void 0, false, {
                 fileName: "src/pages/HomePage/homepage.js",
                 lineNumber: 8,
@@ -34407,6 +34266,222 @@ $RefreshReg$(_c, "HomePage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","../common/Navbar/navbar":"2Xn2v","./homepage.css":"dH0s0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dH0s0":[function() {},{}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire4ba1")
+},{"react/jsx-dev-runtime":"iTorj","../common/Navbar/navbar":"2Xn2v","./homepage.css":"dH0s0","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dH0s0":[function() {},{}],"gdARo":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$86e5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$86e5.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _navbar = require("../common/Navbar/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _imageGeneratorCss = require("./imageGenerator.css");
+var _react = require("react");
+var _s = $RefreshSig$();
+const ImageGenerator = ()=>{
+    _s();
+    const [name, changeName] = (0, _react.useState)("Aakash");
+    const func = (e)=>{
+        changeName(e.target.value);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                fileName: "src/pages/ImageGenerator/imageGenerator.js",
+                lineNumber: 14,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "image-generator-main-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "image-search",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: "https://png.pngtree.com/thumb_back/fh260/background/20230817/pngtree-lotus-flower-jpg-pink-lotus-flower-image_13023952.jpg"
+                            }, void 0, false, {
+                                fileName: "src/pages/ImageGenerator/imageGenerator.js",
+                                lineNumber: 17,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                onChange: (e)=>{
+                                    func(e);
+                                }
+                            }, void 0, false, {
+                                fileName: "src/pages/ImageGenerator/imageGenerator.js",
+                                lineNumber: 18,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/ImageGenerator/imageGenerator.js",
+                        lineNumber: 16,
+                        columnNumber: 17
+                    }, undefined),
+                    name
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/ImageGenerator/imageGenerator.js",
+                lineNumber: 15,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/ImageGenerator/imageGenerator.js",
+        lineNumber: 13,
+        columnNumber: 9
+    }, undefined);
+};
+_s(ImageGenerator, "cWkinfx69u5RFeP6TXFta4XtX8w=");
+_c = ImageGenerator;
+exports.default = ImageGenerator;
+var _c;
+$RefreshReg$(_c, "ImageGenerator");
+
+  $parcel$ReactRefreshHelpers$86e5.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../common/Navbar/navbar":"2Xn2v","./imageGenerator.css":"2Qwzt","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2Qwzt":[function() {},{}],"bujso":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a1a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a1a6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _navbar = require("../common/Navbar/navbar");
+var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _reactRouterDom = require("react-router-dom");
+var _react = require("react");
+var _historyPageCss = require("./historyPage.css");
+var _s = $RefreshSig$();
+const HistoryPage = ()=>{
+    _s();
+    const [data, setData] = (0, _react.useState)([]);
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const getData = async ()=>{
+        const res = await fetch(`https://dummyjson.com/products/search?q=${searchText}`);
+        const obj = await res.json();
+        setData(obj.products);
+    };
+    (0, _react.useEffect)(()=>{
+        getData();
+    }, [
+        searchText
+    ]);
+    console.log("normal rendering flow", data);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                fileName: "src/pages/HistoryPage/historyPage.js",
+                lineNumber: 25,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                className: "search-box-input",
+                onChange: (e)=>{
+                    setSearchText(e.target.value);
+                }
+            }, void 0, false, {
+                fileName: "src/pages/HistoryPage/historyPage.js",
+                lineNumber: 26,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "history-main-container",
+                children: data.map((item)=>{
+                    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "history-card",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                                children: item.title
+                            }, void 0, false, {
+                                fileName: "src/pages/HistoryPage/historyPage.js",
+                                lineNumber: 31,
+                                columnNumber: 29
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: item.description
+                            }, void 0, false, {
+                                fileName: "src/pages/HistoryPage/historyPage.js",
+                                lineNumber: 32,
+                                columnNumber: 29
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: `/history/${item.id}`,
+                                children: "More"
+                            }, void 0, false, {
+                                fileName: "src/pages/HistoryPage/historyPage.js",
+                                lineNumber: 33,
+                                columnNumber: 29
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/HistoryPage/historyPage.js",
+                        lineNumber: 30,
+                        columnNumber: 25
+                    }, undefined);
+                })
+            }, void 0, false, {
+                fileName: "src/pages/HistoryPage/historyPage.js",
+                lineNumber: 27,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/pages/HistoryPage/historyPage.js",
+        lineNumber: 24,
+        columnNumber: 9
+    }, undefined);
+};
+_s(HistoryPage, "HVBDfpXXJRTfmtTwpfpbn1a0Aqg=");
+_c = HistoryPage;
+exports.default = HistoryPage;
+var _c;
+$RefreshReg$(_c, "HistoryPage");
+
+  $parcel$ReactRefreshHelpers$a1a6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","../common/Navbar/navbar":"2Xn2v","react-router-dom":"9xmpe","react":"21dqq","./historyPage.css":"ckjrN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ckjrN":[function() {},{}],"aeRD2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$7875 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$7875.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const HistoryInformationPage = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: " Info of: "
+    }, void 0, false, {
+        fileName: "src/pages/HistoryInformationPage/historyInformationPage.js",
+        lineNumber: 3,
+        columnNumber: 9
+    }, undefined);
+};
+_c = HistoryInformationPage;
+exports.default = HistoryInformationPage;
+var _c;
+$RefreshReg$(_c, "HistoryInformationPage");
+
+  $parcel$ReactRefreshHelpers$7875.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["hPIHA","1xC6H","igcvL"], "igcvL", "parcelRequire4ba1")
 
 //# sourceMappingURL=index.5baa4167.js.map
